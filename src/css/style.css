@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+
+html {
+    height: 100%;
+    font-family: 'Fira Code', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--advice-card-color);
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    gap: 20px;
+}
+
+.advice-id {
+    color: var(--advice-dice-color);
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 40px;    
+}
+
+.descricao {
+    color: var(--text-color);
+    padding: 23px;
+    text-align: center;
+    font-weight: 800;
+    width: 300px;
+}
+
+.card .linha-risco {
+     width: 350px
+    
+}
+
+.dice {
+    background-color: var(--advice-dice-color);
+    width: 60px;
+    height: 60px;
+    transform: translateY(50%);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--advice-dice-color);
+}
+
+.dice:hover{
+    cursor: pointer;
+    color: #53FFAB;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
